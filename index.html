@@ -4,67 +4,60 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Toolshed Apps</title>
-<meta name="description" content="Toolshed Apps LLC builds practical, focused iPhone apps — YardShelf for lawn and yard care, and Funky Trainer for functional trainer workouts.">
+<meta name="description" content="Toolshed Apps LLC builds small, focused iPhone apps — YardShelf for lawn and yard care, and Funky Trainer for functional trainer workouts.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 112 112'%3E%3Crect width='112' height='112' rx='28' fill='%232563EB'/%3E%3Cpath d='M26 54 L56 30 L86 54' fill='none' stroke='%23fff' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M40 58h32M56 58v28' stroke='%23fff' stroke-width='9' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#f6f3ec; --ink:#1f1d1a; --muted:#5f5a52; --card:#fffdf8;
-    --line:#e4ded2; --accent:#2f6b4f; --accent-ink:#ffffff; --accent-soft:#e3efe7;
-    --wood:#8a5a2b;
+    --bg:#ffffff; --ink:#0F172A; --muted:#475569; --soft:#EEF2F7; --card:#ffffff;
+    --line:#E2E8F0; --accent:#2563EB; --accent-ink:#ffffff; --link:#1D4ED8; --mint:#10B981;
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
-      --bg:#17150f; --ink:#f0ebe0; --muted:#a9a295; --card:#201d16;
-      --line:#302b22; --accent:#5fa883; --accent-ink:#0f1a14; --accent-soft:#1f2e26;
-      --wood:#c58a4f;
+      --bg:#0B1120; --ink:#F1F5F9; --muted:#94A3B8; --soft:#111A2E; --card:#111A2E;
+      --line:#1E293B; --accent:#3B82F6; --accent-ink:#ffffff; --link:#60A5FA; --mint:#34D399;
     }
   }
   :root[data-theme="dark"]{
-    --bg:#17150f; --ink:#f0ebe0; --muted:#a9a295; --card:#201d16;
-    --line:#302b22; --accent:#5fa883; --accent-ink:#0f1a14; --accent-soft:#1f2e26;
-    --wood:#c58a4f;
+    --bg:#0B1120; --ink:#F1F5F9; --muted:#94A3B8; --soft:#111A2E; --card:#111A2E;
+    --line:#1E293B; --accent:#3B82F6; --accent-ink:#ffffff; --link:#60A5FA; --mint:#34D399;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
-  a{color:var(--accent)}
-  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,-apple-system,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--link)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
   header{padding:22px 0}
   nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.25rem;letter-spacing:-.01em}
-  .brand svg{width:34px;height:34px}
-  nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
-  nav ul a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.95rem}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.45rem;letter-spacing:-.04em}
+  .brand svg{width:38px;height:38px}
+  nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+  nav ul a{color:var(--muted);text-decoration:none;font-weight:600;font-size:.95rem}
   nav ul a:hover{color:var(--ink)}
   @media(max-width:560px){nav ul{display:none}}
 
-  .hero{padding:72px 0 56px}
-  .hero h1{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:clamp(2.4rem,6vw,4rem);line-height:1.05;letter-spacing:-.02em;margin:0 0 18px;max-width:14ch}
-  .hero p{font-size:1.15rem;color:var(--muted);max-width:52ch;margin:0 0 28px}
-  .btn{display:inline-block;padding:12px 20px;border-radius:999px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600}
-  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);margin-left:10px}
+  .hero{padding:80px 0 64px}
+  .hero h1{font-weight:800;font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.02;letter-spacing:-.04em;margin:0 0 20px}
+  .hero p{font-size:1.15rem;color:var(--muted);max-width:50ch;margin:0 0 32px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 24px;border-radius:999px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
 
-  .apps{padding:30px 0 60px}
+  .apps{padding:24px 0 72px}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:14px}
-  .icon{width:64px;height:64px;border-radius:16px;display:grid;place-items:center;background:var(--accent-soft)}
-  .icon svg{width:36px;height:36px}
-  .card h2{font-family:Fraunces,Georgia,serif;font-size:1.6rem;margin:0;letter-spacing:-.01em}
-  .tag{font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+  .card{background:var(--soft);border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px}
+  .card svg.icon{width:72px;height:72px}
+  .card h2{font-size:1.7rem;font-weight:800;margin:0;letter-spacing:-.03em}
+  .tag{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--link)}
   .card p{margin:0;color:var(--muted)}
   .card ul{margin:0;padding-left:18px;color:var(--muted)}
-  .card .links{margin-top:auto;display:flex;gap:14px;flex-wrap:wrap;padding-top:8px}
-  .card .links a{font-weight:600;text-decoration:none}
-  .soon{opacity:.85}
+  .card .links{margin-top:auto;display:flex;gap:18px;flex-wrap:wrap;padding-top:10px}
+  .card .links a{font-weight:700;text-decoration:none}
 
-  .about{padding:50px 0;border-top:1px solid var(--line)}
-  .about h2{font-family:Fraunces,Georgia,serif;font-size:1.9rem;margin:0 0 12px}
-  .about p{color:var(--muted);max-width:60ch;margin:0 0 12px}
-
-  .support{padding:50px 0;border-top:1px solid var(--line)}
-  .support h2{font-family:Fraunces,Georgia,serif;font-size:1.9rem;margin:0 0 12px}
-  .support p{color:var(--muted);max-width:60ch;margin:0 0 10px}
+  section.text{padding:56px 0;border-top:1px solid var(--line)}
+  section.text h2{font-size:2rem;font-weight:800;letter-spacing:-.03em;margin:0 0 12px}
+  section.text p{color:var(--muted);max-width:60ch;margin:0 0 12px}
 
   footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:.9rem}
   footer .row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
@@ -76,12 +69,12 @@
 <header class="wrap">
   <nav>
     <a class="brand" href="#">
-      <svg viewBox="0 0 48 48" aria-hidden="true">
-        <path d="M6 20 24 7l18 13v20a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z" fill="var(--wood)"/>
-        <path d="M6 20 24 7l18 13H6z" fill="var(--accent)"/>
-        <rect x="19" y="26" width="10" height="16" rx="1" fill="var(--bg)"/>
+      <svg viewBox="0 0 112 112" aria-hidden="true">
+        <rect width="112" height="112" rx="28" fill="#2563EB"/>
+        <path d="M26 54 L56 30 L86 54" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M40 58h32M56 58v28" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
       </svg>
-      Toolshed Apps
+      toolshed
     </a>
     <ul>
       <li><a href="#apps">Apps</a></li>
@@ -94,20 +87,18 @@
 
 <main>
   <section class="hero wrap">
-    <h1>Practical apps, built to be used.</h1>
-    <p>Toolshed Apps makes small, focused iPhone apps for the stuff you actually do — taking care of your yard, getting a workout in — without the bloat.</p>
-    <a class="btn" href="#apps">See the apps</a>
-    <a class="btn ghost" href="#support">Get support</a>
+    <h1>Small apps.<br>Real work.</h1>
+    <p>Toolshed Apps makes focused iPhone apps for the things you actually do — taking care of your yard, getting a workout in — without the bloat.</p>
+    <div class="btns">
+      <a class="btn" href="#apps">See the apps</a>
+      <a class="btn ghost" href="#support">Get support</a>
+    </div>
   </section>
 
   <section id="apps" class="apps wrap">
     <div class="grid">
       <article class="card">
-        <div class="icon">
-          <svg viewBox="0 0 36 36" aria-hidden="true" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 31V17"/><path d="M18 17c-6 0-10-4-10-10 6 0 10 4 10 10z"/><path d="M18 21c6 0 10-4 10-10-6 0-10 4-10 10z"/><path d="M8 31h20"/>
-          </svg>
-        </div>
+        <svg class="icon" viewBox="0 0 88 88" aria-hidden="true"><rect width="88" height="88" rx="20" fill="#10B981"/><path d="M44 68V40" stroke="#fff" stroke-width="6" stroke-linecap="round"/><path d="M44 46c-10 0-16-6-16-16 10 0 16 6 16 16zM44 52c10 0 16-6 16-16-10 0-16 6-16 16z" fill="#fff"/></svg>
         <span class="tag">Lawn &amp; yard care</span>
         <h2>YardShelf</h2>
         <p>Know what your yard needs and when. YardShelf pulls in local soil temperature and conditions so you can time seeding, fertilizing and treatments right instead of guessing.</p>
@@ -123,11 +114,7 @@
       </article>
 
       <article class="card">
-        <div class="icon">
-          <svg viewBox="0 0 36 36" aria-hidden="true" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 15v6M8 12v12M28 12v12M32 15v6M8 18h20"/>
-          </svg>
-        </div>
+        <svg class="icon" viewBox="0 0 88 88" aria-hidden="true"><rect width="88" height="88" rx="20" fill="#0F172A"/><path d="M18 38v12M26 32v24M62 32v24M70 38v12M26 44h36" stroke="#60A5FA" stroke-width="6" stroke-linecap="round"/></svg>
         <span class="tag">Functional trainer workouts</span>
         <h2>Funky Trainer</h2>
         <p>A workout companion built for cable functional trainers. Build your own routines or let the app put one together, follow along with exercise demos, and watch your progress over time.</p>
@@ -144,13 +131,13 @@
     </div>
   </section>
 
-  <section id="about" class="about wrap">
+  <section id="about" class="text wrap">
     <h2>About</h2>
     <p>Toolshed Apps LLC is an independent software company based in Virginia. Each app starts as a tool I wanted for myself, then gets polished until it's good enough to put on the App Store.</p>
-    <p>The name says it: a shed full of useful tools, each one made for a specific job.</p>
+    <p>The idea is simple: a shed full of useful tools, each one made for a specific job.</p>
   </section>
 
-  <section id="support" class="support wrap">
+  <section id="support" class="text wrap">
     <h2>Support</h2>
     <p>Questions, bugs, or feature ideas? Email <a href="mailto:support@toolshedapps.com">support@toolshedapps.com</a> and include which app you're writing about. You'll get a reply from a real person.</p>
     <p>For privacy questions, see the <a href="privacy.html">privacy policy</a>.</p>
