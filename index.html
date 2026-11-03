@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Toolshed Apps</title>
-<meta name="description" content="Toolshed Apps LLC builds small, focused iPhone apps — YardShelf for lawn and yard care, and Funky Trainer for functional trainer workouts.">
+<meta name="description" content="Toolshed Apps LLC makes YardShelf and Funky Trainer for iPhone, and Profit Every Stop and LineItemIQ for business.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 112 112'%3E%3Crect width='112' height='112' rx='28' fill='%232563EB'/%3E%3Cpath d='M26 54 L56 30 L86 54' fill='none' stroke='%23fff' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M40 58h32M56 58v28' stroke='%23fff' stroke-width='9' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -47,7 +47,10 @@
   .apps{padding:24px 0 72px}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
   .card{background:var(--soft);border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px}
-  .card svg.icon{width:72px;height:72px}
+  .logo{display:block;width:72px;height:72px;border-radius:18px;overflow:hidden;flex:none}
+  .logo svg{display:block;width:100%;height:100%}
+  .biz .logo{width:64px;height:64px;border-radius:16px;margin-bottom:18px;box-shadow:0 0 0 1px #334155}
+  .soon{font-size:.9rem;color:var(--muted);font-weight:600}
   .card h2{font-size:1.7rem;font-weight:800;margin:0;letter-spacing:-.03em}
   .tag{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--link)}
   .card p{margin:0;color:var(--muted)}
@@ -117,35 +120,38 @@
   <section id="apps" class="apps wrap">
     <div class="grid">
       <article class="card">
-        <svg class="icon" viewBox="0 0 88 88" aria-hidden="true"><rect width="88" height="88" rx="20" fill="#10B981"/><path d="M44 68V40" stroke="#fff" stroke-width="6" stroke-linecap="round"/><path d="M44 46c-10 0-16-6-16-16 10 0 16 6 16 16zM44 52c10 0 16-6 16-16-10 0-16 6-16 16z" fill="#fff"/></svg>
-        <span class="tag">Lawn &amp; yard care</span>
+        <span class="logo"><svg role="img" aria-label="YardShelf logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="#245A2F"/><rect x="150" y="600" width="724" height="40" rx="20" fill="#C99A5B"/> <g> <path fill-rule="evenodd" fill="#F4F1E6" d="M190 582 V333.6 Q190 274.4 238.0 267.0 L244.0 237.4 H322.0 L334.0 267.0 H448.0 Q490 267.0 490 326.2 V582 Q490 600 472 600 H208 Q190 600 190 582 Z M364.0 304.0 H442.0 Q454.0 304.0 454.0 322.5 V363.2 Q454.0 378.0 442.0 378.0 H376.0 Q364.0 378.0 364.0 363.2 Z"/> <rect x="235.0" y="204.1" width="96.0" height="40.7" rx="8" fill="#F4F1E6"/> <rect x="238.0" y="422.4" width="204.00000000000003" height="111.0" rx="10" fill="#3E8A4B"/> </g> <g fill="#F4F1E6"> <rect x="620.0" y="339.6" width="155.0" height="260.4" rx="22"/> <rect x="666.5" y="289.2" width="62.0" height="58.800000000000004" rx="6"/> <path d="M647.9 293.4 V230.4 Q647.9 180 682.0 180 H753.3 Q775.0 180 775.0 230.4 V293.4 Z"/> <path d="M651.0 196.8 H540 V238.8 H651.0 Z"/> <path d="M654.1 264.0 Q607.5 280.8 615.0 348.0 L627.75 339.6 Q627.75 306.0 654.1 306.0 Z"/> <rect x="644.8" y="415.20000000000005" width="105.4" height="117.60000000000001" rx="10" fill="#C9563C"/> </g> <path d="M120 1024 C 200 800 270 700 350 640 C 305 760 280 900 280 1024 Z" fill="#7FC28A"/> <path d="M260 1024 C 300 770 400 640 500 570 C 455 720 430 870 440 1024 Z" fill="#5DAF6A"/> <path d="M420 1024 C 460 790 560 660 690 590 C 620 730 600 880 610 1024 Z" fill="#9AD27F"/> <path d="M580 1024 C 640 800 740 690 880 640 C 800 760 770 900 770 1024 Z" fill="#5DAF6A"/> <path d="M760 1024 C 800 880 860 800 960 760 C 900 860 890 950 900 1024 Z" fill="#7FC28A"/></svg></span>
+        <span class="tag">Lawn, pest &amp; pool</span>
         <h2>YardShelf</h2>
-        <p>Know what your yard needs and when. YardShelf pulls in local soil temperature and conditions so you can time seeding, fertilizing and treatments right instead of guessing.</p>
+        <p><strong>Spray, spread and dose by the label.</strong> YardShelf is an iPhone app for everything you spray, spread or dose around your home. It starts from what's already on your shelf and works from each product's own label.</p>
         <ul>
-          <li>Live soil temperature for your location</li>
-          <li>Season-aware reminders for yard tasks</li>
-          <li>Keep track of products and what you applied</li>
+          <li>Add products by barcode, label photo or one photo of the whole shelf</li>
+          <li>Label rates quoted word for word, with a mix calculator for your yard</li>
+          <li>Guides for lawn problems, mosquitoes, ticks, ants and more</li>
+          <li>Soil temperature, spray windows and reminders on a schedule</li>
         </ul>
         <div class="links">
-          <a href="#" rel="noopener">Download on the App Store →</a>
-          <a href="mailto:support@toolshedapps.com?subject=YardShelf">Support</a>
+          <a href="https://yardshelf.com" rel="noopener">Visit yardshelf.com →</a>
+          <a href="mailto:support@yardshelf.com">Support</a>
         </div>
+        <span class="soon">Coming to the App Store in spring 2027</span>
       </article>
 
       <article class="card">
-        <svg class="icon" viewBox="0 0 88 88" aria-hidden="true"><rect width="88" height="88" rx="20" fill="#0F172A"/><path d="M18 38v12M26 32v24M62 32v24M70 38v12M26 44h36" stroke="#60A5FA" stroke-width="6" stroke-linecap="round"/></svg>
+        <span class="logo"><svg role="img" aria-label="Funky Trainer logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220"><rect width="220" height="220" rx="50" fill="#F6A623"/><g transform="translate(-14 0)"><rect x="58" y="42" width="30" height="140" rx="15" fill="#111318"/> <path d="M73 57 H150" stroke="#111318" stroke-width="30" stroke-linecap="round"/> <circle cx="152" cy="57" r="22" fill="#111318"/> <circle cx="152" cy="57" r="9" fill="#F6A623"/> <path d="M73 110 H128" stroke="#111318" stroke-width="26" stroke-linecap="round"/> <path d="M174 57 C 188 86, 158 104, 166 128" stroke="#111318" stroke-width="7" fill="none" stroke-linecap="round"/> <path d="M166 128 L148 162 M166 128 L184 162" stroke="#111318" stroke-width="7" stroke-linecap="round"/> <rect x="142" y="158" width="48" height="16" rx="8" fill="#111318"/> </g></svg></span>
         <span class="tag">Functional trainer workouts</span>
         <h2>Funky Trainer</h2>
-        <p>A workout companion built for cable functional trainers. Build your own routines or let the app put one together, follow along with exercise demos, and watch your progress over time.</p>
+        <p>A workout app for cable functional trainers. Pick your machine and extra attachments, and Funky Trainer shows every exercise you can do with your setup, builds routines for your goal and time, and tracks your progress.</p>
         <ul>
-          <li>Routines designed around your machine and attachments</li>
-          <li>Demos for every exercise so you get the form right</li>
-          <li>Charts, history and export with Pro</li>
+          <li>Exact pulley position, setup and form cues for your machine</li>
+          <li>Routines built for your goal, split and session length</li>
+          <li>Logs sets with last-time numbers and a suggested weight</li>
+          <li>Progress charts, PRs and CSV export with Pro</li>
         </ul>
         <div class="links">
-          <a href="#" rel="noopener">Download on the App Store →</a>
           <a href="mailto:support@toolshedapps.com?subject=Funky%20Trainer">Support</a>
         </div>
+        <span class="soon">Coming to the App Store. Pro: $14.99/year or $34.99 lifetime</span>
       </article>
     </div>
   </section>
@@ -154,21 +160,24 @@
   <section id="business" class="biz wrap">
     <div class="biz-inner">
       <div class="biz-copy">
-        <span class="tag">For business</span>
+        <span class="logo"><svg role="img" aria-label="Profit Every Stop logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><rect width="120" height="120" rx="28" fill="#12212E"/><path d="M24 86 L48 70 L70 78 L96 38" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="86" r="7" fill="#FFFFFF"/><circle cx="48" cy="70" r="7" fill="#FFFFFF"/><circle cx="70" cy="78" r="7" fill="#FFFFFF"/><circle cx="96" cy="38" r="15" fill="#1F7A4D"/><circle cx="96" cy="38" r="5.5" fill="#FFFFFF"/></svg></span>
+        <span class="tag">For business · Route-based services</span>
         <h2>Profit Every Stop</h2>
-        <p>Profitability analytics for route-based service businesses. See what every customer, job and stop actually earns after drive time, labor and materials, then price and route accordingly.</p>
+        <p class="slogan">Make every stop pay.</p>
+        <p>Customer profitability and repricing for lawn care and other route-based service companies. It works out what each customer really costs to serve (crew time on site, drive time, truck, materials and overhead), finds the accounts that lose money, and turns that into a repricing plan and ready-to-send letters.</p>
         <p class="cred">Designed by a former distribution pricing executive.</p>
         <div class="btns"><a class="btn" href="profit-every-stop/">Learn more</a><a class="btn ghost" href="mailto:support@toolshedapps.com?subject=Profit%20Every%20Stop%20early%20access">Request early access</a></div>
       </div>
       <div class="biz-stat">
         <div><b>Profit by customer and job</b><span>Not just revenue: the margin left after the true cost to serve.</span></div>
         <div><b>Route density insights</b><span>Spot where a tighter route or a price change adds the most profit.</span></div>
-        <div><b>Built for Jobber users</b><span>Plugs into the tools you already run your business on.</span></div>
+        <div><b>Repricing plan &amp; letters</b><span>Turns the numbers into new prices and ready-to-send customer letters.</span></div>
       </div>
     </div>
 
     <div class="biz-inner">
       <div class="biz-copy">
+        <span class="logo"><svg role="img" aria-label="LineItemIQ logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#1c2733"/><path d="M20.6 44.3V45H8.3V44.3L11.5 43.3V18.9L8.3 17.9V17.2H20.6V17.9L17.5 18.9V43.3Z" fill="#f5f7f8"/><circle cx="35" cy="31" r="12.6" fill="none" stroke="#f5f7f8" stroke-width="4.6"/><path d="M37.5 37.5 L43 43 L56 24.5" fill="none" stroke="#1c2733" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M37.5 37.5 L43 43 L56 24.5" fill="none" stroke="#ef6b5f" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <span class="tag">For business · B2B buyers</span>
         <h2>LineItemIQ</h2>
         <p class="slogan">Every line, checked.</p>
@@ -186,7 +195,7 @@
 
   <section id="about" class="text wrap">
     <h2>About</h2>
-    <p>Toolshed Apps LLC is an independent software company based in Virginia. Each app starts as a tool I wanted for myself, then gets polished until it's good enough to put on the App Store.</p>
+    <p>Toolshed Apps LLC is an independent software company based in Virginia. Each product starts as a tool I wanted for myself, then gets polished until it's ready for other people to use.</p>
     <p>The idea is simple: a shed full of useful tools, each one made for a specific job.</p>
   </section>
 
